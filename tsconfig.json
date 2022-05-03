@@ -15,8 +15,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@/auth/*": ["src/modules/auth/*"],
-      "@/communities/*": ["src/modules/communities/*"]
+      "@auth/*": ["src/modules/auth/*"],
+      "@communities/*": ["src/modules/communities/*"]
     },
     "lib": ["esnext", "dom"],
     "types": ["node"]

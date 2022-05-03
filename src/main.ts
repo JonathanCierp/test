@@ -9,7 +9,7 @@ import usePrimevue from '@/composables/usePrimevue'
 import useI18n from '@/composables/useI18n'
 
 import '@/assets/tailwind.css'
-import 'primevue/resources/themes/vela-blue/theme.css'
+import '@/assets/theme.css'
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 import '@/assets/base.css'

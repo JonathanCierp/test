@@ -4,17 +4,14 @@
   --color-background-alt-2: #2c2c2c;
 
   --color-input-background: #181818;
+  --color-input-background-alt: #4f4f4f;
+
+  --color-card-background: #3f3f3f;
 
   --color-error: #ce1618;
   --color-error-alt: #db1a1d;
 }
 
-.p-inputtext {
-  @apply border-0 py-3;
-  background: var(--color-input-background);
-  box-shadow: 0px 1px 4px 0px #00000040 !important;
-}
-
-.p-inputtext:focus {
-  @apply border-0 !important;
+html {
+  background: #111111;
 }

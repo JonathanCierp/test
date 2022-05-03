@@ -34,6 +34,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@auth': fileURLToPath(new URL('./src/modules/auth', import.meta.url)),
+      '@communities': fileURLToPath(new URL('./src/modules/communities', import.meta.url)),
     },
   },
 })

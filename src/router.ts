@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 //import checkAuth from '@/middleware/checkAuth'
-import communitiesRoutes from '@/communities/communities.routes'
-import authRoutes from '@/auth/auth.routes'
+// import communitiesRoutes from '@/communities/communities.routes'
+import authRoutes from '@auth/auth.routes'
 import TestPage from '@/pages/TestPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     //...communitiesRoutes,
-    //...authRoutes,
+    ...authRoutes,
     {
       path: '/',
       component: TestPage,
