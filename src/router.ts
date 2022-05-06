@@ -14,8 +14,8 @@ const router = createRouter({
       component: TestPage,
       name: 'test-home',
       meta: {
-        requiresAuth: true,
-        roles: [],
+        // requiresAuth: true,
+        // roles: [],
       },
     },
     // @TODO : To remove
