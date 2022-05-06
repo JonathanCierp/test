@@ -36,6 +36,15 @@ export default {
         },
       },
     },
+    modules: {
+      auth: {
+        pages: {
+          SigninPage: {
+            password: 'Mot de passe',
+          },
+        },
+      },
+    },
     // OLDS
     appSidebar: {
       menu1: {
@@ -75,15 +84,15 @@ export default {
       email: 'Email',
       password: 'Mot de passe',
     },
-    modules: {
-      communities: {
-        players: {
-          tabs: ['Liste des joueurs', 'Liste des équipes'],
-        },
-        videos: {
-          tabs: ['Liste des clips vidéo'],
-        },
-      },
-    },
+    // modules: {
+    //   communities: {
+    //     players: {
+    //       tabs: ['Liste des joueurs', 'Liste des équipes'],
+    //     },
+    //     videos: {
+    //       tabs: ['Liste des clips vidéo'],
+    //     },
+    //   },
+    // },
   },
 }

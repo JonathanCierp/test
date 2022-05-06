@@ -8,20 +8,24 @@
           <BaseInput id="email" v-model="playerForm.email" type="text" />
           <label for="email">Email</label>
         </span>
-        <span class="p-float-label p-input-icon-left p-input-icon-right">
-          <i class="pi pi-lock" />
-          <BaseInput id="password" v-model="playerForm.password" :type="showPassword ? 'text' : 'password'" />
-          <label for="password">Mot de passe</label>
-          <i class="pi cursor-pointer" :class="[showPassword ? 'pi-eye-slash' : 'pi-eye']" @click="showPassword = !showPassword" />
-        </span>
+        <BaseInput
+          id="password"
+          v-model="playerForm.password"
+          :label="$t('message.modules.auth.pages.SigninPage.password')"
+          :type="showPassword ? 'text' : 'password'"
+          icon-left="pi pi-lock"
+          :icon-right="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"
+          icon-right-class="cursor-pointer"
+          @click:icon-right="showPassword = !showPassword"
+        />
       </template>
     </BaseCard>
   </main>
 </template>
 
 <script setup lang="ts">
-  import useAuth from '@auth/composables/useAuth'
   import { ref } from 'vue'
+  import useAuth from '@auth/composables/useAuth'
 
   const { playerForm } = useAuth()
   const showPassword = ref<boolean>(false)
