@@ -40,7 +40,9 @@ export default {
       auth: {
         pages: {
           SigninPage: {
-            password: 'Mot de passe',
+            email: 'E-mail *',
+            password: 'Mot de passe *',
+            login: 'Se connecter',
           },
         },
       },

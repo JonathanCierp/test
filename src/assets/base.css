@@ -13,5 +13,6 @@
 }
 
 html {
-  background: #111111;
+  /* background: #111111; */
+  background: var(--surface-b);
 }
