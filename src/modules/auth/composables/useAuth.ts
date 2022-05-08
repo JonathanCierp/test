@@ -5,6 +5,7 @@ export default () => {
   const isLoading = ref<boolean>(false)
   const formEl = ref()
   const emailEl = ref()
+  const passwordEl = ref()
 
   const playerForm = reactive<PlayerSigninInput>({
     email: '',
@@ -13,14 +14,18 @@ export default () => {
 
   const onSignin = () => {
     formEl.value.validateForm()
+
+    if (formEl.value.isValid) {
+    }
   }
 
-  provide('formChildren', [emailEl])
+  provide('formChildren', [emailEl, passwordEl])
 
   return {
     isLoading,
     formEl,
     emailEl,
+    passwordEl,
 
     playerForm,
 

@@ -14,12 +14,14 @@
           />
           <BaseFormInput
             id="password"
+            ref="passwordEl"
             v-model="playerForm.password"
             :label="$t('message.modules.auth.pages.SigninPage.password')"
             :type="showPassword ? 'text' : 'password'"
             icon-left="pi pi-lock"
             :icon-right="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"
             icon-right-class="cursor-pointer"
+            :rules="[requiredRule]"
             @click:icon-right="showPassword = !showPassword"
           />
         </template>
@@ -39,7 +41,7 @@
   import useAuth from '@auth/composables/useAuth'
 
   const { requiredRule, emailRule } = useValidationRule()
-  const { playerForm, formEl, emailEl, onSignin } = useAuth()
+  const { playerForm, formEl, emailEl, passwordEl, onSignin } = useAuth()
   const showPassword = ref<boolean>(false)
 </script>
 

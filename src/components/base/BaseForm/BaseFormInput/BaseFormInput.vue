@@ -16,7 +16,7 @@
       <label v-if="label" :for="id">{{ label }}</label>
       <i v-if="iconRight" :class="[iconRight, iconRightClass]" @click="$emit('click:iconRight')" />
     </span>
-    <p v-if="!input.isValid" class="flex items-center mt-2 font-medium text-red-500 text-xs">
+    <p v-if="!input.isValid" class="flex items-center mt-2 font-medium p-error text-xs">
       <i class="mr-2 pi pi-exclamation-triangle" />
       {{ input.message }}
     </p>
