@@ -21,7 +21,7 @@
           </PPills>
         </div>
         <div class="ml-auto">
-          <PButton label="Telecharcher" icon="pi pi-download" icon-pos="right" class="text-color p-button-danger" />
+          <PButton label="Telecharger" icon="pi pi-download" icon-pos="right" class="text-color p-button-danger" />
         </div>
       </div>
     </template>
